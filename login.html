@@ -1,0 +1,77 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Horizon Bikes | Login</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="auth-page">
+  <main class="auth-wrapper">
+    <div class="glass auth-card">
+      <a class="auth-brand" href="index.html" aria-label="Horizon Bikes Home">
+        <span class="logo-mark" aria-hidden="true"></span>
+        <span class="brand-name">Horizon Bikes</span>
+      </a>
+      <h1>Welcome Back</h1>
+      <p class="auth-subtitle">Sign in to ride the future.</p>
+
+      <form class="form-grid needs-validation auth-form" novalidate>
+        <div class="input-group">
+          <label for="login-email">Email</label>
+          <div class="input-shell">
+            <span class="input-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
+                <path d="M4 6h16v12H4z" stroke="currentColor" stroke-width="1.6" fill="none" />
+                <path d="m4 7 8 6 8-6" stroke="currentColor" stroke-width="1.6" fill="none" />
+              </svg>
+            </span>
+            <input class="input" id="login-email" name="email" type="email" placeholder="you@horizonbikes.com" required />
+          </div>
+        </div>
+        <div class="input-group">
+          <label for="login-password">Password</label>
+          <div class="input-shell">
+            <span class="input-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
+                <path d="M6 10h12v10H6z" stroke="currentColor" stroke-width="1.6" fill="none" />
+                <path d="M8 10V7a4 4 0 0 1 8 0v3" stroke="currentColor" stroke-width="1.6" fill="none" />
+              </svg>
+            </span>
+            <input class="input" id="login-password" name="password" type="password" placeholder="Enter password" required />
+          </div>
+        </div>
+        <div class="auth-row">
+          <label class="auth-check">
+            <input type="checkbox" />
+            <span>Remember me</span>
+          </label>
+          <a class="auth-link" href="register.html">Forgot password?</a>
+        </div>
+        <p class="form-message" aria-live="polite"></p>
+        <button class="btn auth-primary" type="submit">Log In</button>
+      </form>
+
+      <p class="auth-note">Don’t have an account? <a class="auth-link" href="register.html">Sign Up</a></p>
+      <div class="auth-divider"><span>OR</span></div>
+      <div class="auth-social-grid">
+        <button class="btn btn-outline auth-social" type="button">
+          <span class="social-dot">G</span>
+          <span>Google</span>
+        </button>
+        <button class="btn btn-outline auth-social" type="button">
+          <span class="social-dot">f</span>
+          <span>Facebook</span>
+        </button>
+      </div>
+      <a class="auth-back" href="index.html">Back to Home</a>
+    </div>
+  </main>
+
+  <script src="main.js"></script>
+</body>
+</html>
+
+
+
+

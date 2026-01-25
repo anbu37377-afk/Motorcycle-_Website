@@ -1,0 +1,207 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Horizon Bikes | Contact</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="page">
+  <header class="site-header">
+    <div class="nav-bar">
+      <div class="nav-inner container">
+        <a class="brand" href="index.html">
+          <span class="logo-mark" aria-hidden="true"></span>
+          <span class="brand-text">
+            <span class="brand-name">Horizon Bikes</span>
+            <span class="brand-tag">Ride the Future.</span>
+          </span>
+        </a>
+        <nav class="nav-links" aria-label="Primary">
+          <a class="nav-link" href="index.html">Home</a>
+          <a class="nav-link" href="home-2.html">Home 2</a>
+          <a class="nav-link" href="motorcycles.html">Motorcycles</a>
+          <a class="nav-link" href="dealers.html">Dealers</a>
+          <a class="nav-link" href="blog.html">Blog</a>
+          <a class="nav-link" href="portal-bikes.html">My Bikes</a>
+          <a class="nav-link" href="portal-service.html">Service</a>
+          <a class="nav-link" href="contact.html">Contact</a>
+          <a class="nav-link" href="dashboard.html">Dashboard</a>
+        </nav>
+        <div class="nav-actions">
+          <button class="icon-btn theme-toggle" id="theme-toggle" type="button" aria-pressed="false" aria-label="Toggle theme">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <circle cx="12" cy="12" r="5"></circle>
+              <path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.5 4.5l2.2 2.2M17.3 17.3l2.2 2.2M4.5 19.5l2.2-2.2M17.3 6.7l2.2-2.2"></path>
+            </svg>
+          </button>
+          <a class="btn btn-outline btn-small" href="login.html">Login</a>
+          <a class="btn btn-small" href="register.html">Register</a>
+
+          <button class="icon-btn menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+      <div class="menu-panel glass">
+        <button class="menu-close icon-btn" type="button" data-close aria-label="Close menu">X</button>
+        <div class="menu-links">
+          <a class="nav-link" data-close href="index.html">Home</a>
+          <a class="nav-link" data-close href="home-2.html">Home 2</a>
+          <a class="nav-link" data-close href="motorcycles.html">Motorcycles</a>
+          <a class="nav-link" data-close href="dealers.html">Dealers</a>
+          <a class="nav-link" data-close href="blog.html">Blog</a>
+          <a class="nav-link" data-close href="portal-bikes.html">My Bikes</a>
+          <a class="nav-link" data-close href="portal-service.html">Service</a>
+          <a class="nav-link" data-close href="contact.html">Contact</a>
+          <a class="nav-link" data-close href="dashboard.html">Dashboard</a>
+        </div>
+        <div class="menu-actions center">
+          <a class="btn btn-outline" data-close href="login.html">Login</a>
+          <a class="btn" data-close href="register.html">Register</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero hero-contact">
+      <div class="container glass">
+        <p class="eyebrow">Contact Horizon Bikes</p>
+        <h1>Let's Plan Your Ride</h1>
+        <p>Test rides, dealer appointments, and service scheduling all in one place.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container split-grid">
+        <div class="neo-card form-card">
+          <h2>Send a Message</h2>
+          <form class="form-grid needs-validation" novalidate>
+            <div class="form-row">
+              <div>
+                <label for="contact-name">Full Name</label>
+                <input class="input" id="contact-name" name="name" type="text" required />
+              </div>
+              <div>
+                <label for="contact-email">Email</label>
+                <input class="input" id="contact-email" name="email" type="email" required />
+              </div>
+            </div>
+            <div>
+              <label for="contact-topic">Topic</label>
+              <input class="input" id="contact-topic" name="topic" type="text" required />
+            </div>
+            <div>
+              <label for="contact-message">Message</label>
+              <textarea class="input" id="contact-message" name="message" rows="4" required></textarea>
+            </div>
+            <p class="form-message" aria-live="polite"></p>
+            <div class="center">
+              <button class="btn" type="submit">Submit Request</button>
+            </div>
+          </form>
+        </div>
+        <div class="glass panel">
+          <h2>Visit Our Studio</h2>
+          <p>Sunset Blvd, Los Angeles</p>
+          <p>Mon-Sat 9am-7pm</p>
+          <p>hello@horizonbikes.com</p>
+          <div class="hero-media">
+            <img src="https://images.pexels.com/photos/19762039/pexels-photo-19762039.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Horizon Bikes studio map" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt">
+      <div class="container split-grid">
+        <div class="glass hero-panel stack">
+          <h2>Ride Concierge</h2>
+          <p>Schedule demos, request delivery, or ask about performance upgrades.</p>
+          <ul class="list">
+            <li>Private demo ride scheduling</li>
+            <li>Delivery and onboarding support</li>
+            <li>Performance upgrade consultation</li>
+          </ul>
+          <div class="center">
+            <a class="btn btn-outline" href="dealers.html">Find a Studio</a>
+          </div>
+        </div>
+        <div class="glass image-tile">
+          <img src="image/sport-bike.jpg" alt="Horizon Bikes concierge riders" />
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="stack">
+        <a class="brand" href="contact.html">
+          <span class="logo-mark" aria-hidden="true"></span>
+          <span class="brand-text">
+            <span class="brand-name">Horizon Bikes</span>
+            <span class="brand-tag">Ride the Future.</span>
+          </span>
+        </a>
+        <p>Premium performance motorcycles engineered for the next generation.</p>
+        <div class="center">
+          <a class="btn btn-outline btn-small" href="motorcycles.html">Browse Bikes</a>
+        </div>
+        <div class="footer-social">
+          <a href="#" aria-label="Horizon Bikes Instagram">
+            <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
+              <rect x="4" y="4" width="16" height="16" rx="4"></rect>
+              <circle cx="12" cy="12" r="4"></circle>
+              <circle cx="17" cy="7" r="1"></circle>
+            </svg>
+          </a>
+          <a href="#" aria-label="Horizon Bikes Facebook">
+            <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
+              <path d="M14 8h3V5h-3c-2.2 0-4 1.8-4 4v2H7v3h3v5h3v-5h3l1-3h-4V9c0-.6.4-1 1-1Z"></path>
+            </svg>
+          </a>
+          <a href="#" aria-label="Horizon Bikes YouTube">
+            <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
+              <path d="M4 7.5c0-1 0-2.5 2-2.5h12c2 0 2 1.5 2 2.5v9c0 1-0.5 2.5-2 2.5H6c-1.5 0-2-1.5-2-2.5v-9Z"></path>
+              <path d="m10 9 5 3-5 3z" fill="currentColor" stroke="none"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="stack">
+        <h3>Explore</h3>
+        <ul class="list">
+          <li><a href="dealers.html">Dealer Network</a></li>
+          <li><a href="blog.html">Rider Journal</a></li>
+          <li><a href="portal-bikes.html">My Garage</a></li>
+        </ul>
+      </div>
+      <div class="stack">
+        <h3>Support</h3>
+        <p>support@horizonbikes.com</p>
+        <p>+1 (555) 349-2400</p>
+        <p>Mon-Sat 9am-7pm</p>
+      </div>
+      <div class="stack">
+        <h3>Visit</h3>
+        <p>Horizon Bikes Studio, Sunset Blvd</p>
+        <p>Los Angeles, CA</p>
+        <p>Private demo sessions daily</p>
+      </div>
+    </div>
+    <p class="footer-note">(c) 2026 Horizon Bikes. All rights reserved.</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
+
+
+
+
+
+
