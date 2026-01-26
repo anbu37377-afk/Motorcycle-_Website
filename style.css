@@ -37,6 +37,12 @@
   padding: 0;
 }
 
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   --bg: var(--bg-dark);
   --surface: var(--surface-dark);
@@ -284,11 +290,13 @@ body[data-theme="light"] .glass {
   display: flex;
   align-items: center;
   gap: var(--space-2);
+  min-width: 0;
 }
 
 .brand-text {
   display: grid;
   gap: 0.1rem;
+  min-width: 0;
 }
 
 .brand-name {
@@ -313,6 +321,7 @@ body[data-theme="light"] .glass {
 .nav-bar {
   background: rgba(5,7,10,0.72);
   border-bottom: 1px solid rgba(255,255,255,0.08);
+  width: 100%;
 }
 
 body[data-theme="light"] .nav-bar {
@@ -325,6 +334,7 @@ body[data-theme="light"] .nav-bar {
   align-items: center;
   gap: var(--space-3);
   padding: 1rem 0;
+  max-width: 100%;
 }
 
 .nav-links {
@@ -349,10 +359,38 @@ body[data-theme="light"] .nav-bar {
   display: flex;
   align-items: center;
   gap: var(--space-2);
+  flex-shrink: 0;
+  min-width: 0;
 }
 
 .nav-actions .theme-toggle {
   margin-left: 0.4rem;
+  order: 2;
+}
+
+.nav-actions .menu-toggle {
+  order: 4;
+}
+
+.nav-actions .nav-dashboard-icon {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 2.2rem;
+  height: 2.2rem;
+  color: var(--text);
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.nav-actions .nav-dashboard-icon svg {
+  width: 1.2rem;
+  height: 1.2rem;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 1.6;
 }
 
 .menu-toggle {
@@ -379,15 +417,21 @@ body[data-theme="light"] .nav-bar {
   position: fixed;
   inset: 0;
   background: rgba(2,4,8,0.7);
-  display: none;
+  display: flex;
   justify-content: center;
   align-items: flex-start;
   padding: 5rem 0 2rem;
   z-index: 200;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
 }
 
 .mobile-menu.open {
-  display: flex;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
 }
 
 .menu-panel {
@@ -398,6 +442,14 @@ body[data-theme="light"] .nav-bar {
   max-height: calc(100vh - 7rem);
   overflow-y: auto;
   background: rgba(5,7,12,0.92);
+  transform: translateY(-12px);
+  opacity: 0;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.mobile-menu.open .menu-panel {
+  transform: translateY(0);
+  opacity: 1;
 }
 
 body[data-theme="light"] .menu-panel {
@@ -467,6 +519,10 @@ body[data-theme="light"] .menu-panel {
 
 .hero-panel {
   padding: var(--space-4);
+}
+
+.hero-blog .container.glass {
+  padding: calc(var(--space-4) + 0.25rem) var(--space-4);
 }
 
 .hero-media {
@@ -569,6 +625,18 @@ body[data-theme="light"] .ai-icon {
   margin-top: var(--space-2);
 }
 
+.portal-bikes-page .card-meta + .center {
+  margin-top: var(--space-2);
+}
+
+.portal-bikes-page .delivery-card .center {
+  margin-top: var(--space-3);
+}
+
+.portal-bikes-page .grid-cards .btn {
+  min-width: 10.5rem;
+}
+
 .list {
   list-style: disc;
   list-style-position: inside;
@@ -586,10 +654,19 @@ body[data-theme="light"] .ai-icon {
 }
 
 .image-tile img {
+  width: 100%;
   height: clamp(12rem, 30vw, 18rem);
   object-fit: cover;
   border-radius: var(--radius-l);
   margin-inline: auto;
+}
+
+.glass.image-tile,
+.glass.hero-media {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  backdrop-filter: none;
 }
 
 .feature-grid {
@@ -875,6 +952,12 @@ body[data-theme="light"] .site-footer {
   text-align: center;
 }
 
+.site-footer .list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 .footer-brand {
   display: inline-flex;
   align-items: center;
@@ -952,6 +1035,54 @@ body[data-theme="light"] .footer-social a {
   gap: var(--space-3);
 }
 
+.portal-bikes-page .grid-cards .neo-card.card {
+  padding: calc(var(--space-3) + 0.25rem);
+}
+
+.portal-bikes-page .upcoming-service {
+  padding: calc(var(--space-3) + 0.4rem);
+}
+
+.portal-bikes-page .upcoming-service .center {
+  margin-top: var(--space-2);
+}
+
+.portal-bikes-page .upcoming-service .btn {
+  padding: 0.5rem 1.15rem;
+  font-size: 0.72rem;
+}
+
+.portal-service-page .next-appointment {
+  padding: calc(var(--space-3) + 0.5rem);
+}
+
+.portal-service-page .next-appointment .center {
+  margin-top: var(--space-2);
+}
+
+.portal-service-page .reschedule-btn {
+  padding: 0.5rem 1.2rem;
+  font-size: 0.72rem;
+}
+
+.dashboard-page .dashboard-grid {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.dashboard-page .upcoming-actions {
+  padding: calc(var(--space-3) + 0.5rem);
+}
+
+.dashboard-page .upcoming-actions .center {
+  margin-top: var(--space-2);
+}
+
+.dashboard-page .upcoming-actions .btn {
+  padding: 0.5rem 1.2rem;
+  font-size: 0.72rem;
+}
+
 .table {
   width: 100%;
   border-collapse: collapse;
@@ -983,6 +1114,45 @@ body[data-theme="light"] .table td {
   margin-inline: auto;
 }
 
+.home-2-page .section.cta .container.glass {
+  padding: calc(var(--space-4) + 0.4rem) var(--space-4);
+}
+
+.home-2-page .section.cta .center {
+  margin-top: var(--space-2);
+}
+
+.dealer-detail-page .hero-dealer .hero-copy .center {
+  margin-top: var(--space-2);
+}
+
+.dealer-detail-page .team-panel {
+  padding: calc(var(--space-3) + 0.4rem);
+}
+
+.dealer-detail-page .team-panel .center {
+  margin-top: var(--space-2);
+}
+
+.motorcycles-page .grid-cards {
+  align-items: stretch;
+}
+
+.motorcycles-page .grid-cards .card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.motorcycles-page .grid-cards .card .center {
+  margin-top: auto;
+  padding-top: var(--space-2);
+}
+
+.motorcycle-detail-page .performance-modules .center {
+  margin-top: var(--space-3);
+}
+
 .gallery-grid {
   grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
 }
@@ -1000,11 +1170,25 @@ body[data-theme="light"] .table td {
   }
 
   .menu-toggle {
-    display: flex;
+    display: none;
   }
 
   .nav-actions .btn {
     display: none;
+  }
+
+  .nav-actions {
+    margin-left: auto;
+  }
+
+  .nav-actions .theme-toggle {
+    margin-left: 0;
+    order: 2;
+  }
+
+  .nav-actions .nav-dashboard-icon {
+    display: inline-flex;
+    order: 1;
   }
 
   .dashboard-shell {

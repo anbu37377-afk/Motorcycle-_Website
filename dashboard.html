@@ -6,7 +6,7 @@
   <title>Horizon Bikes | Dashboard</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body class="page">
+<body class="page dashboard-page">
   <header class="site-header">
     <div class="nav-bar">
       <div class="nav-inner container">
@@ -33,6 +33,14 @@
             <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
               <circle cx="12" cy="12" r="5"></circle>
               <path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.5 4.5l2.2 2.2M17.3 17.3l2.2 2.2M4.5 19.5l2.2-2.2M17.3 6.7l2.2-2.2"></path>
+            </svg>
+          </button>
+          <button class="nav-dashboard-icon" type="button" aria-label="Open navigation menu" aria-controls="mobile-menu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <rect x="4" y="4" width="7" height="7" rx="1"></rect>
+              <rect x="13" y="4" width="7" height="7" rx="1"></rect>
+              <rect x="4" y="13" width="7" height="7" rx="1"></rect>
+              <rect x="13" y="13" width="7" height="7" rx="1"></rect>
             </svg>
           </button>
           <a class="btn btn-outline btn-small" href="login.html">Login</a>
@@ -111,8 +119,8 @@
     </section>
 
     <section class="section">
-      <div class="container dashboard-grid">
-        <div class="neo-card">
+        <div class="container dashboard-grid">
+          <div class="neo-card">
           <h2>Live Performance</h2>
           <p>Torque response and stability mapping are tracking within optimal ranges.</p>
           <div class="meter">
@@ -137,8 +145,8 @@
     </section>
 
     <section class="section alt">
-      <div class="container split-grid">
-        <div class="glass panel">
+        <div class="container split-grid">
+        <div class="glass panel upcoming-actions">
           <h2>Upcoming Actions</h2>
           <ul class="list">
             <li>Install firmware v3.3 on NRX Pulse</li>
@@ -206,7 +214,7 @@
             </div>
           </article>
           <article class="neo-card card">
-            <img src="image/WhatsApp Image 2026-01-25 at 2.17.07 PM (6).jpeg" alt="NRX Ion track snapshot" />
+            <img src="https://sm.askmen.com/askmen_in/photo/default/srk-bike_ky91.jpg" alt="NRX Ion track snapshot" />
             <div class="card-body">
               <h3>NRX Ion R</h3>
               <p>Telemetry review completed with 4% lap time gain.</p>
