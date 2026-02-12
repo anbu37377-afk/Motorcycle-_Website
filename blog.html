@@ -1,52 +1,48 @@
 ﻿<!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Horizon Bikes | Blog</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body class="page">
+
+<body class="page blog-page">
   <header class="site-header">
     <div class="nav-bar">
-      <div class="nav-inner container">
+      <div class="container nav-inner">
         <a class="brand" href="index.html">
-          <span class="logo-mark" aria-hidden="true"></span>
-          <span class="brand-text">
+          <div class="logo-mark" aria-hidden="true"></div>
+          <div class="brand-text">
             <span class="brand-name">Horizon Bikes</span>
             <span class="brand-tag">Ride the Future.</span>
-          </span>
+          </div>
         </a>
-        <nav class="nav-links" aria-label="Primary">
-          <a class="nav-link" href="index.html">Home</a>
+        <nav class="nav-links" aria-label="Main Navigation">
+          <a class="nav-link" href="index.html">Home 1</a>
           <a class="nav-link" href="home-2.html">Home 2</a>
           <a class="nav-link" href="motorcycles.html">Motorcycles</a>
           <a class="nav-link" href="dealers.html">Dealers</a>
           <a class="nav-link" href="blog.html">Blog</a>
-          <a class="nav-link" href="portal-bikes.html">My Bikes</a>
-          <a class="nav-link" href="portal-service.html">Service</a>
+          <a class="nav-link" href="services.html">Services</a>
           <a class="nav-link" href="contact.html">Contact</a>
           <a class="nav-link" href="dashboard.html">Dashboard</a>
         </nav>
         <div class="nav-actions">
-            <button class="icon-btn theme-toggle" id="theme-toggle" type="button" aria-pressed="false" aria-label="Toggle theme">
-              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-                <circle cx="12" cy="12" r="5"></circle>
-                <path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.5 4.5l2.2 2.2M17.3 17.3l2.2 2.2M4.5 19.5l2.2-2.2M17.3 6.7l2.2-2.2"></path>
-              </svg>
-            </button>
-            <button class="nav-dashboard-icon" type="button" aria-label="Open navigation menu" aria-controls="mobile-menu" aria-expanded="false">
-              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-                <rect x="4" y="4" width="7" height="7" rx="1"></rect>
-                <rect x="13" y="4" width="7" height="7" rx="1"></rect>
-                <rect x="4" y="13" width="7" height="7" rx="1"></rect>
-                <rect x="13" y="13" width="7" height="7" rx="1"></rect>
-              </svg>
-            </button>
-            <a class="btn btn-outline btn-small" href="login.html">Login</a>
-            <a class="btn btn-small" href="register.html">Register</a>
-
-          <button class="icon-btn menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+          <a class="nav-btn nav-btn-outline" href="login.html">Login</a>
+          <a class="nav-btn" href="register.html">Sign Up</a>
+          <button class="icon-btn theme-toggle" id="theme-toggle" type="button" aria-pressed="false"
+            aria-label="Toggle theme">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <circle cx="12" cy="12" r="5"></circle>
+              <path
+                d="M12 2v3M12 19v3M2 12h3M19 12h3M4.5 4.5l2.2 2.2M17.3 17.3l2.2 2.2M4.5 19.5l2.2-2.2M17.3 6.7l2.2-2.2">
+              </path>
+            </svg>
+          </button>
+          <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu"
+            aria-label="Open menu">
             <span></span><span></span><span></span>
           </button>
         </div>
@@ -54,56 +50,99 @@
     </div>
     <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
       <div class="menu-panel glass">
-        <button class="menu-close icon-btn" type="button" data-close aria-label="Close menu">X</button>
+        <button class="icon-btn menu-close" type="button" data-close aria-label="Close menu">X</button>
         <div class="menu-links">
-          <a class="nav-link" data-close href="index.html">Home</a>
+          <a class="nav-link" data-close href="index.html">Home 1</a>
           <a class="nav-link" data-close href="home-2.html">Home 2</a>
           <a class="nav-link" data-close href="motorcycles.html">Motorcycles</a>
           <a class="nav-link" data-close href="dealers.html">Dealers</a>
           <a class="nav-link" data-close href="blog.html">Blog</a>
-          <a class="nav-link" data-close href="portal-bikes.html">My Bikes</a>
-          <a class="nav-link" data-close href="portal-service.html">Service</a>
+          <a class="nav-link" data-close href="services.html">Services</a>
           <a class="nav-link" data-close href="contact.html">Contact</a>
           <a class="nav-link" data-close href="dashboard.html">Dashboard</a>
         </div>
         <div class="menu-actions center">
-          <a class="btn btn-outline" data-close href="login.html">Login</a>
-          <a class="btn" data-close href="register.html">Register</a>
+          <a class="nav-btn nav-btn-outline" data-close href="login.html">Login</a>
+          <a class="nav-btn" data-close href="register.html">Sign Up</a>
         </div>
       </div>
     </div>
   </header>
 
   <main>
-    <section class="hero hero-blog">
-      <div class="container glass">
-        <p class="eyebrow">Horizon Bikes Journal</p>
-        <h1>Performance, Design, and Ownership</h1>
-        <p>Insights from Horizon Bikes engineers, riders, and performance specialists.</p>
-      </div>
-    </section>
-
-    <section class="section alt">
-      <div class="container split-grid">
-        <div class="glass image-tile">
-          <img src="image/sport-bike.jpg" alt="Horizon Bikes performance testing" />
+    <section class="hero-premium">
+      <div class="hero-visual">
+        <div class="hero-bg-media"
+          style="background-image: url('https://images.unsplash.com/photo-1609630875171-b1321377ee65?auto=format&fit=crop&w=1600&q=80');">
         </div>
-        <div class="glass hero-panel stack">
-          <h2>Featured Story</h2>
-          <p>Inside our torque-mapping lab and the data that keeps every ride precise.</p>
-          <ul class="list">
-            <li>Track-to-street calibration</li>
-            <li>Thermal balance optimization</li>
-            <li>Live telemetry insights</li>
-          </ul>
-          <div class="center">
-            <a class="btn btn-outline" href="blog-detail.html">Read the Feature</a>
+        <div class="hero-overlay"></div>
+        <div class="hero-motion-shape"></div>
+      </div>
+      <div class="container hero-content">
+        <div class="hero-text-stack">
+          <p class="hero-eyebrow">The Rider Journal</p>
+          <h1 class="hero-title">Beyond <br> Velocity</h1>
+          <p class="hero-subtitle">Insights from Horizon Bikes engineers, riders, and performance specialists.</p>
+          <div class="hero-actions">
+            <a class="btn-premium" href="#stories">Read Journal</a>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section">
+    <section class="section featured-story-premium reveal">
+      <div class="fs-bg-anim"></div>
+      <div class="container fs-asym-layout">
+        <div class="fs-content-side">
+          <div class="fs-badge">
+            <span class="pulse-dot"></span>
+            Featured Insight
+          </div>
+          <h2 class="fs-title-reveal">The Art of <br> <span class="text-gradient">Torque Mapping</span></h2>
+          <div class="fs-decoration-line"></div>
+          <p class="fs-desc">Inside our high-fidelity labs, we decode the language of electric propulsion. Discover how
+            data shapes the soul of every Horizon machine.</p>
+
+          <div class="fs-stats-grid">
+            <div class="fs-stat-item">
+              <span class="val">0.05ms</span>
+              <span class="lbl">Response</span>
+            </div>
+            <div class="fs-stat-item">
+              <span class="val">400+</span>
+              <span class="lbl">Sensors</span>
+            </div>
+            <div class="fs-stat-item">
+              <span class="val">∞</span>
+              <span class="lbl">Precision</span>
+            </div>
+          </div>
+
+          <a class="btn btn-premium magnet-btn" href="blog-detail.html">
+            <span>Read The Deep Dive</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+
+        <div class="fs-visual-side">
+          <div class="fs-main-img-wrap parallax-card" data-speed="0.05">
+            <img src="https://images.unsplash.com/photo-1609630875171-b1321377ee65?auto=format&fit=crop&w=1600&q=80"
+              alt="Main Lab" class="fs-main-img" />
+          </div>
+          <div class="fs-detail-img-wrap parallax-card" data-speed="0.1">
+            <img src="https://images.unsplash.com/photo-1558981285-6f0c94958bb6?auto=format&fit=crop&w=800&q=80"
+              alt="Detail Shot" class="fs-detail-img" />
+            <div class="fs-detail-overlay">
+              <span>System Active</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal">
       <div class="container">
         <div class="grid grid-cards">
           <article class="neo-card card">
@@ -177,11 +216,11 @@
     <div class="container footer-grid">
       <div class="stack">
         <a class="brand" href="blog.html">
-          <span class="logo-mark" aria-hidden="true"></span>
-          <span class="brand-text">
+          <div class="logo-mark" aria-hidden="true"></div>
+          <div class="brand-text">
             <span class="brand-name">Horizon Bikes</span>
             <span class="brand-tag">Ride the Future.</span>
-          </span>
+          </div>
         </a>
         <p>Premium performance motorcycles engineered for the next generation.</p>
         <div class="center">
@@ -234,7 +273,5 @@
 
   <script src="main.js"></script>
 </body>
+
 </html>
-
-
-

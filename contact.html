@@ -1,52 +1,47 @@
 ﻿<!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Horizon Bikes | Contact</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body class="page">
   <header class="site-header">
     <div class="nav-bar">
-      <div class="nav-inner container">
+      <div class="container nav-inner">
         <a class="brand" href="index.html">
-          <span class="logo-mark" aria-hidden="true"></span>
-          <span class="brand-text">
+          <div class="logo-mark" aria-hidden="true"></div>
+          <div class="brand-text">
             <span class="brand-name">Horizon Bikes</span>
-            <span class="brand-tag">Ride the Future.</span>
-          </span>
+          </div>
         </a>
-        <nav class="nav-links" aria-label="Primary">
-          <a class="nav-link" href="index.html">Home</a>
+        <nav class="nav-links" aria-label="Main Navigation">
+          <a class="nav-link" href="index.html">Home 1</a>
           <a class="nav-link" href="home-2.html">Home 2</a>
           <a class="nav-link" href="motorcycles.html">Motorcycles</a>
           <a class="nav-link" href="dealers.html">Dealers</a>
           <a class="nav-link" href="blog.html">Blog</a>
-          <a class="nav-link" href="portal-bikes.html">My Bikes</a>
-          <a class="nav-link" href="portal-service.html">Service</a>
+          <a class="nav-link" href="services.html">Services</a>
           <a class="nav-link" href="contact.html">Contact</a>
           <a class="nav-link" href="dashboard.html">Dashboard</a>
         </nav>
         <div class="nav-actions">
-          <button class="icon-btn theme-toggle" id="theme-toggle" type="button" aria-pressed="false" aria-label="Toggle theme">
+          <a class="nav-btn nav-btn-outline" href="login.html">Login</a>
+          <a class="nav-btn" href="register.html">Sign Up</a>
+          <button class="icon-btn theme-toggle" id="theme-toggle" type="button" aria-pressed="false"
+            aria-label="Toggle theme">
             <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
               <circle cx="12" cy="12" r="5"></circle>
-              <path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.5 4.5l2.2 2.2M17.3 17.3l2.2 2.2M4.5 19.5l2.2-2.2M17.3 6.7l2.2-2.2"></path>
+              <path
+                d="M12 2v3M12 19v3M2 12h3M19 12h3M4.5 4.5l2.2 2.2M17.3 17.3l2.2 2.2M4.5 19.5l2.2-2.2M17.3 6.7l2.2-2.2">
+              </path>
             </svg>
           </button>
-          <button class="nav-dashboard-icon" type="button" aria-label="Open navigation menu" aria-controls="mobile-menu" aria-expanded="false">
-            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-              <rect x="4" y="4" width="7" height="7" rx="1"></rect>
-              <rect x="13" y="4" width="7" height="7" rx="1"></rect>
-              <rect x="4" y="13" width="7" height="7" rx="1"></rect>
-              <rect x="13" y="13" width="7" height="7" rx="1"></rect>
-            </svg>
-          </button>
-          <a class="btn btn-outline btn-small" href="login.html">Login</a>
-          <a class="btn btn-small" href="register.html">Register</a>
-
-          <button class="icon-btn menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+          <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu"
+            aria-label="Open menu">
             <span></span><span></span><span></span>
           </button>
         </div>
@@ -54,38 +49,49 @@
     </div>
     <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
       <div class="menu-panel glass">
-        <button class="menu-close icon-btn" type="button" data-close aria-label="Close menu">X</button>
+        <button class="icon-btn menu-close" type="button" data-close aria-label="Close menu">X</button>
         <div class="menu-links">
-          <a class="nav-link" data-close href="index.html">Home</a>
+          <a class="nav-link" data-close href="index.html">Home 1</a>
           <a class="nav-link" data-close href="home-2.html">Home 2</a>
           <a class="nav-link" data-close href="motorcycles.html">Motorcycles</a>
           <a class="nav-link" data-close href="dealers.html">Dealers</a>
           <a class="nav-link" data-close href="blog.html">Blog</a>
-          <a class="nav-link" data-close href="portal-bikes.html">My Bikes</a>
-          <a class="nav-link" data-close href="portal-service.html">Service</a>
+          <a class="nav-link" data-close href="services.html">Services</a>
           <a class="nav-link" data-close href="contact.html">Contact</a>
           <a class="nav-link" data-close href="dashboard.html">Dashboard</a>
         </div>
         <div class="menu-actions center">
-          <a class="btn btn-outline" data-close href="login.html">Login</a>
-          <a class="btn" data-close href="register.html">Register</a>
+          <a class="nav-btn nav-btn-outline" data-close href="login.html">Login</a>
+          <a class="nav-btn" data-close href="register.html">Sign Up</a>
         </div>
       </div>
     </div>
   </header>
 
   <main>
-    <section class="hero hero-contact">
-      <div class="container glass">
-        <p class="eyebrow">Contact Horizon Bikes</p>
-        <h1>Let's Plan Your Ride</h1>
-        <p>Test rides, dealer appointments, and service scheduling all in one place.</p>
+    <section class="hero-premium">
+      <div class="hero-visual">
+        <div class="hero-bg-media"
+          style="background-image: url('https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=1600&q=80');">
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-motion-shape"></div>
+      </div>
+      <div class="container hero-content">
+        <div class="hero-text-stack">
+          <p class="hero-eyebrow">Connect With Us</p>
+          <h1 class="hero-title">Plan Your <br> Journey</h1>
+          <p class="hero-subtitle">Test rides, dealer appointments, and service scheduling all in one place.</p>
+          <div class="hero-actions">
+            <a class="btn-premium" href="#form">Start Session</a>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="section">
+    <section class="section reveal">
       <div class="container split-grid">
-        <div class="neo-card form-card">
+        <div class="neo-card form-card reveal-zoom">
           <h2>Send a Message</h2>
           <form class="form-grid needs-validation" novalidate>
             <div class="form-row">
@@ -118,13 +124,15 @@
           <p>Mon-Sat 9am-7pm</p>
           <p>hello@horizonbikes.com</p>
           <div class="hero-media">
-            <img src="https://images.pexels.com/photos/19762039/pexels-photo-19762039.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Horizon Bikes studio map" />
+            <img
+              src="https://images.pexels.com/photos/19762039/pexels-photo-19762039.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+              alt="Horizon Bikes studio map" />
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section alt">
+    <section class="section alt reveal">
       <div class="container split-grid">
         <div class="glass hero-panel stack">
           <h2>Ride Concierge</h2>
@@ -149,11 +157,11 @@
     <div class="container footer-grid">
       <div class="stack">
         <a class="brand" href="contact.html">
-          <span class="logo-mark" aria-hidden="true"></span>
-          <span class="brand-text">
+          <div class="logo-mark" aria-hidden="true"></div>
+          <div class="brand-text">
             <span class="brand-name">Horizon Bikes</span>
             <span class="brand-tag">Ride the Future.</span>
-          </span>
+          </div>
         </a>
         <p>Premium performance motorcycles engineered for the next generation.</p>
         <div class="center">
@@ -206,10 +214,5 @@
 
   <script src="main.js"></script>
 </body>
+
 </html>
-
-
-
-
-
-

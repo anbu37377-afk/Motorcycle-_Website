@@ -1,52 +1,49 @@
 ﻿<!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Horizon Bikes | Dealers</title>
+  <link rel="icon" type="image/png" href="image/favicon.png" />
   <link rel="stylesheet" href="style.css" />
 </head>
-<body class="page">
+
+<body class="page dealers-page">
   <header class="site-header">
     <div class="nav-bar">
-      <div class="nav-inner container">
+      <div class="container nav-inner">
         <a class="brand" href="index.html">
-          <span class="logo-mark" aria-hidden="true"></span>
-          <span class="brand-text">
+          <div class="logo-mark" aria-hidden="true"></div>
+          <div class="brand-text">
             <span class="brand-name">Horizon Bikes</span>
             <span class="brand-tag">Ride the Future.</span>
-          </span>
+          </div>
         </a>
-        <nav class="nav-links" aria-label="Primary">
-          <a class="nav-link" href="index.html">Home</a>
+        <nav class="nav-links" aria-label="Main Navigation">
+          <a class="nav-link" href="index.html">Home 1</a>
           <a class="nav-link" href="home-2.html">Home 2</a>
           <a class="nav-link" href="motorcycles.html">Motorcycles</a>
           <a class="nav-link" href="dealers.html">Dealers</a>
           <a class="nav-link" href="blog.html">Blog</a>
-          <a class="nav-link" href="portal-bikes.html">My Bikes</a>
-          <a class="nav-link" href="portal-service.html">Service</a>
+          <a class="nav-link" href="services.html">Services</a>
           <a class="nav-link" href="contact.html">Contact</a>
           <a class="nav-link" href="dashboard.html">Dashboard</a>
         </nav>
         <div class="nav-actions">
-          <button class="icon-btn theme-toggle" id="theme-toggle" type="button" aria-pressed="false" aria-label="Toggle theme">
+          <a class="nav-btn nav-btn-outline" href="login.html">Login</a>
+          <a class="nav-btn" href="register.html">Sign Up</a>
+          <button class="icon-btn theme-toggle" id="theme-toggle" type="button" aria-pressed="false"
+            aria-label="Toggle theme">
             <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
               <circle cx="12" cy="12" r="5"></circle>
-              <path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.5 4.5l2.2 2.2M17.3 17.3l2.2 2.2M4.5 19.5l2.2-2.2M17.3 6.7l2.2-2.2"></path>
+              <path
+                d="M12 2v3M12 19v3M2 12h3M19 12h3M4.5 4.5l2.2 2.2M17.3 17.3l2.2 2.2M4.5 19.5l2.2-2.2M17.3 6.7l2.2-2.2">
+              </path>
             </svg>
           </button>
-          <button class="nav-dashboard-icon" type="button" aria-label="Open navigation menu" aria-controls="mobile-menu" aria-expanded="false">
-            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-              <rect x="4" y="4" width="7" height="7" rx="1"></rect>
-              <rect x="13" y="4" width="7" height="7" rx="1"></rect>
-              <rect x="4" y="13" width="7" height="7" rx="1"></rect>
-              <rect x="13" y="13" width="7" height="7" rx="1"></rect>
-            </svg>
-          </button>
-          <a class="btn btn-outline btn-small" href="login.html">Login</a>
-          <a class="btn btn-small" href="register.html">Register</a>
-
-          <button class="icon-btn menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+          <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu"
+            aria-label="Open menu">
             <span></span><span></span><span></span>
           </button>
         </div>
@@ -54,47 +51,156 @@
     </div>
     <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
       <div class="menu-panel glass">
-        <button class="menu-close icon-btn" type="button" data-close aria-label="Close menu">X</button>
+        <button class="icon-btn menu-close" type="button" data-close aria-label="Close menu">X</button>
         <div class="menu-links">
-          <a class="nav-link" data-close href="index.html">Home</a>
+          <a class="nav-link" data-close href="index.html">Home 1</a>
           <a class="nav-link" data-close href="home-2.html">Home 2</a>
           <a class="nav-link" data-close href="motorcycles.html">Motorcycles</a>
           <a class="nav-link" data-close href="dealers.html">Dealers</a>
           <a class="nav-link" data-close href="blog.html">Blog</a>
-          <a class="nav-link" data-close href="portal-bikes.html">My Bikes</a>
-          <a class="nav-link" data-close href="portal-service.html">Service</a>
+          <a class="nav-link" data-close href="services.html">Services</a>
           <a class="nav-link" data-close href="contact.html">Contact</a>
           <a class="nav-link" data-close href="dashboard.html">Dashboard</a>
         </div>
         <div class="menu-actions center">
-          <a class="btn btn-outline" data-close href="login.html">Login</a>
-          <a class="btn" data-close href="register.html">Register</a>
+          <a class="nav-btn nav-btn-outline" data-close href="login.html">Login</a>
+          <a class="nav-btn" data-close href="register.html">Sign Up</a>
         </div>
       </div>
     </div>
   </header>
 
   <main>
-    <section class="hero hero-map">
-      <div class="container glass">
-        <p class="eyebrow">Certified Dealer Network</p>
-        <h1>Find a Horizon Bikes Studio</h1>
-        <p>Premium showrooms with certified service teams and demo inventory.</p>
-        <div class="hero-media">
-          <img src="https://images.pexels.com/photos/19762039/pexels-photo-19762039.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Horizon Bikes showroom" />
+    <section class="hero-premium parallax-container" style="height: 60vh; padding: 0;">
+      <div class="parallax-layer parallax-layer-bg" data-speed="0.1"
+        style="background-image: url('https://images.pexels.com/photos/19762039/pexels-photo-19762039.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');">
+      </div>
+      <div class="hero-overlay"></div>
+      <div class="hero-motion-shape"></div>
+
+      <div class="container hero-content">
+        <div class="hero-text-stack">
+          <p class="hero-eyebrow">The Network</p>
+          <h1 class="hero-title">Find Your <br> Studio</h1>
+          <p class="hero-subtitle">Premium showrooms with certified service teams and demo inventory nationwide.</p>
         </div>
       </div>
     </section>
 
-    <section class="section">
+    <!-- MAGAZINE SHOWCASE SECTION -->
+    <section class="section reveal magazine-section">
+      <div class="container stack">
+        <div class="magazine-header center">
+          <h2>The Studio Experience</h2>
+          <p>More than a showroom. A space for community, customization, and engineering art.</p>
+        </div>
+
+        <div class="grid grid-cards" style="grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)); gap: 2rem;">
+          <article class="neo-card card">
+            <img src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=800&q=80"
+              alt="Horizon Bikes LA Studio" style="height: 250px; object-fit: cover;" />
+            <div class="card-body">
+              <h3>Horizon Bikes LA Studio</h3>
+              <p>Sunset Blvd, Los Angeles</p>
+              <div class="chip-row center">
+                <span class="chip">Flagship</span>
+                <span class="chip">Service</span>
+              </div>
+            </div>
+            <div class="center" style="margin-top: auto;">
+              <a class="btn btn-outline" href="dealer-detail.html">View Detail</a>
+            </div>
+          </article>
+
+          <article class="neo-card card"
+            style="transform: scale(1.05); border-color: var(--accent); box-shadow: 0 20px 40px -10px rgba(255, 115, 22, 0.3);">
+            <div class="ai-icon" style="position: absolute; top: 1rem; right: 1rem; z-index: 2;">🔥</div>
+            <img src="https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?auto=format&fit=crop&w=800&q=80"
+              alt="Horizon Bikes Austin Hub" style="height: 250px; object-fit: cover;" />
+            <div class="card-body">
+              <h3>Horizon Bikes Austin Hub</h3>
+              <p>East 6th Street, Austin</p>
+              <div class="chip-row center">
+                <span class="chip">Performance Lab</span>
+                <span class="chip">Track Day</span>
+              </div>
+            </div>
+            <div class="center" style="margin-top: auto;">
+              <a class="btn btn-primary" href="dealer-detail.html">View Detail</a>
+            </div>
+          </article>
+
+          <article class="neo-card card">
+            <img src="https://images.unsplash.com/photo-1599819811279-d5ad9cccf838?auto=format&fit=crop&w=800&q=80"
+              alt="Horizon Bikes Miami Dock" style="height: 250px; object-fit: cover;" />
+            <div class="card-body">
+              <h3>Horizon Bikes Miami Dock</h3>
+              <p>Wynwood Ave, Miami</p>
+              <div class="chip-row center">
+                <span class="chip">Coastal Tours</span>
+                <span class="chip">Rentals</span>
+              </div>
+            </div>
+            <div class="center" style="margin-top: auto;">
+              <a class="btn btn-outline" href="dealer-detail.html">View Detail</a>
+            </div>
+          </article>
+        </div>
+
+      </div>
+      </div>
+    </section>
+
+    <!-- DEALER BENEFITS SECTION -->
+    <section class="section alt reveal benefits-section">
+      <div class="container">
+        <div class="benefits-grid">
+          <div class="benefit-card">
+            <div class="b-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+              </svg>
+            </div>
+            <h3>Certified Trust</h3>
+            <p>Every pre-owned bike passes a 150-point inspection by factory-trained engineers.</p>
+          </div>
+          <div class="benefit-card">
+            <div class="b-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path
+                  d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.77 3.77Z" />
+              </svg>
+            </div>
+            <h3>Genuine Parts</h3>
+            <p>Access to OEM components and performance upgrades exclusive to the dealer network.</p>
+          </div>
+          <div class="benefit-card">
+            <div class="b-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+            </div>
+            <h3>Exclusive Events</h3>
+            <p>Priority access to track days, new model launches, and guided group tours.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal">
       <div class="container">
         <div class="grid grid-cards">
           <article class="neo-card card">
             <img src="image/WhatsApp Image 2026-01-25 at 2.04.54 PM.jpeg" alt="Horizon Bikes LA studio" />
-            <h3>Horizon Bikes LA Studio</h3>
-            <p>Sunset Blvd, Los Angeles</p>
-            <p>Mon-Sat 9am-7pm</p>
-            <p>Demo rides, performance tuning, and concierge delivery.</p>
+            <div class="card-body">
+              <h3>Horizon Bikes LA Studio</h3>
+              <p>Sunset Blvd, Los Angeles</p>
+              <p>Mon-Sat 9am-7pm</p>
+              <p>Demo rides, performance tuning, and concierge delivery.</p>
+            </div>
             <div class="center">
               <a class="btn btn-outline" href="dealer-detail.html">View Detail</a>
             </div>
@@ -102,10 +208,12 @@
 
           <article class="neo-card card">
             <img src="image/WhatsApp Image 2026-01-25 at 2.17.07 PM (3).jpeg" alt="Horizon Bikes Austin hub" />
-            <h3>Horizon Bikes Austin Hub</h3>
-            <p>East 6th Street, Austin</p>
-            <p>Mon-Sat 10am-8pm</p>
-            <p>Track-inspired demos and custom performance setups.</p>
+            <div class="card-body">
+              <h3>Horizon Bikes Austin Hub</h3>
+              <p>East 6th Street, Austin</p>
+              <p>Mon-Sat 10am-8pm</p>
+              <p>Track-inspired demos and custom performance setups.</p>
+            </div>
             <div class="center">
               <a class="btn btn-outline" href="dealer-detail.html">View Detail</a>
             </div>
@@ -113,10 +221,12 @@
 
           <article class="neo-card card">
             <img src="image/WhatsApp Image 2026-01-25 at 2.17.07 PM (4).jpeg" alt="Horizon Bikes Miami dock" />
-            <h3>Horizon Bikes Miami Dock</h3>
-            <p>Wynwood Ave, Miami</p>
-            <p>Mon-Sat 9am-7pm</p>
-            <p>Coastal touring routes and weekend rider clinics.</p>
+            <div class="card-body">
+              <h3>Horizon Bikes Miami Dock</h3>
+              <p>Wynwood Ave, Miami</p>
+              <p>Mon-Sat 9am-7pm</p>
+              <p>Coastal touring routes and weekend rider clinics.</p>
+            </div>
             <div class="center">
               <a class="btn btn-outline" href="dealer-detail.html">View Detail</a>
             </div>
@@ -130,11 +240,11 @@
     <div class="container footer-grid">
       <div class="stack">
         <a class="brand" href="dealers.html">
-          <span class="logo-mark" aria-hidden="true"></span>
-          <span class="brand-text">
+          <div class="logo-mark" aria-hidden="true"></div>
+          <div class="brand-text">
             <span class="brand-name">Horizon Bikes</span>
             <span class="brand-tag">Ride the Future.</span>
-          </span>
+          </div>
         </a>
         <p>Premium performance motorcycles engineered for the next generation.</p>
         <div class="center">
@@ -142,21 +252,26 @@
         </div>
         <div class="footer-social">
           <a href="#" aria-label="Horizon Bikes Instagram">
-            <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
-              <rect x="4" y="4" width="16" height="16" rx="4"></rect>
-              <circle cx="12" cy="12" r="4"></circle>
-              <circle cx="17" cy="7" r="1"></circle>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
             </svg>
           </a>
           <a href="#" aria-label="Horizon Bikes Facebook">
-            <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
-              <path d="M14 8h3V5h-3c-2.2 0-4 1.8-4 4v2H7v3h3v5h3v-5h3l1-3h-4V9c0-.6.4-1 1-1Z"></path>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
             </svg>
           </a>
           <a href="#" aria-label="Horizon Bikes YouTube">
-            <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
-              <path d="M4 7.5c0-1 0-2.5 2-2.5h12c2 0 2 1.5 2 2.5v9c0 1-0.5 2.5-2 2.5H6c-1.5 0-2-1.5-2-2.5v-9Z"></path>
-              <path d="m10 9 5 3-5 3z" fill="currentColor" stroke="none"></path>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path
+                d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.42a2.78 2.78 0 0 0-1.94 2C1 8.11 1 12 1 12s0 3.89.46 5.58a2.78 2.78 0 0 0 1.94 2c1.71.42 8.6.42 8.6.42s6.88 0 8.6-.42a2.78 2.78 0 0 0 1.94-2C23 15.89 23 12 23 12s0-3.89-.46-5.58z">
+              </path>
+              <polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"></polygon>
             </svg>
           </a>
         </div>
@@ -186,10 +301,5 @@
   </footer>
   <script src="main.js"></script>
 </body>
+
 </html>
-
-
-
-
-
-

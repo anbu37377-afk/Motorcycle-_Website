@@ -1,52 +1,49 @@
 ﻿<!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Horizon Bikes | Home</title>
+  <link rel="icon" type="image/png" href="image/favicon.png" />
+  <link rel="icon" type="image/png" href="image/favicon.png" />
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body class="page">
   <header class="site-header">
     <div class="nav-bar">
       <div class="container nav-inner">
         <a class="brand" href="index.html">
-          <span class="logo-mark" aria-hidden="true"></span>
-          <span class="brand-text">
+          <div class="logo-mark" aria-hidden="true"></div>
+          <div class="brand-text">
             <span class="brand-name">Horizon Bikes</span>
-
-            <span class="brand-tag">Ride the Future.</span>
-          </span>
+          </div>
         </a>
-        <nav class="nav-links" aria-label="Primary">
-          <a class="nav-link" href="index.html">Home</a>
+        <nav class="nav-links" aria-label="Main Navigation">
+          <a class="nav-link" href="index.html">Home 1</a>
           <a class="nav-link" href="home-2.html">Home 2</a>
           <a class="nav-link" href="motorcycles.html">Motorcycles</a>
           <a class="nav-link" href="dealers.html">Dealers</a>
           <a class="nav-link" href="blog.html">Blog</a>
-          <a class="nav-link" href="portal-bikes.html">My Bikes</a>
-          <a class="nav-link" href="portal-service.html">Service</a>
+          <a class="nav-link" href="services.html">Services</a>
           <a class="nav-link" href="contact.html">Contact</a>
           <a class="nav-link" href="dashboard.html">Dashboard</a>
         </nav>
         <div class="nav-actions">
-          <button class="icon-btn theme-toggle" id="theme-toggle" type="button" aria-pressed="false" aria-label="Toggle theme">
+          <a class="nav-btn nav-btn-outline" href="login.html">Login</a>
+          <a class="nav-btn" href="register.html">Sign Up</a>
+          <button class="icon-btn theme-toggle" id="theme-toggle" type="button" aria-pressed="false"
+            aria-label="Toggle theme">
             <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
               <circle cx="12" cy="12" r="5"></circle>
-              <path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.5 4.5l2.2 2.2M17.3 17.3l2.2 2.2M4.5 19.5l2.2-2.2M17.3 6.7l2.2-2.2"></path>
+              <path
+                d="M12 2v3M12 19v3M2 12h3M19 12h3M4.5 4.5l2.2 2.2M17.3 17.3l2.2 2.2M4.5 19.5l2.2-2.2M17.3 6.7l2.2-2.2">
+              </path>
             </svg>
           </button>
-          <button class="nav-dashboard-icon" type="button" aria-label="Open navigation menu" aria-controls="mobile-menu" aria-expanded="false">
-            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-              <rect x="4" y="4" width="7" height="7" rx="1"></rect>
-              <rect x="13" y="4" width="7" height="7" rx="1"></rect>
-              <rect x="4" y="13" width="7" height="7" rx="1"></rect>
-              <rect x="13" y="13" width="7" height="7" rx="1"></rect>
-            </svg>
-          </button>
-          <a class="btn btn-outline btn-small" href="login.html">Login</a>
-          <a class="btn btn-small" href="register.html">Register</a>
-          <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+          <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu"
+            aria-label="Open menu">
             <span></span><span></span><span></span>
           </button>
         </div>
@@ -56,63 +53,55 @@
       <div class="menu-panel glass">
         <button class="icon-btn menu-close" type="button" data-close aria-label="Close menu">X</button>
         <div class="menu-links">
-          <a class="nav-link" data-close href="index.html">Home</a>
+          <a class="nav-link" data-close href="index.html">Home 1</a>
           <a class="nav-link" data-close href="home-2.html">Home 2</a>
           <a class="nav-link" data-close href="motorcycles.html">Motorcycles</a>
           <a class="nav-link" data-close href="dealers.html">Dealers</a>
           <a class="nav-link" data-close href="blog.html">Blog</a>
-          <a class="nav-link" data-close href="portal-bikes.html">My Bikes</a>
-          <a class="nav-link" data-close href="portal-service.html">Service</a>
+          <a class="nav-link" data-close href="services.html">Services</a>
           <a class="nav-link" data-close href="contact.html">Contact</a>
-         
+          <a class="nav-link" data-close href="dashboard.html">Dashboard</a>
         </div>
         <div class="menu-actions center">
-          <a class="btn btn-outline" data-close href="login.html">Login</a>
-          <a class="btn" data-close href="register.html">Register</a>
+          <a class="nav-btn nav-btn-outline" data-close href="login.html">Login</a>
+          <a class="nav-btn" data-close href="register.html">Sign Up</a>
         </div>
       </div>
     </div>
   </header>
 
   <main>
-    <section class="hero hero-split">
-      <div class="hero-bg" style="background-image: url('https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=1600&q=80');"></div>
-      <div class="container hero-grid">
-        <div class="glass hero-panel stack">
-          <p class="eyebrow">Performance engineered</p>
-          <h1>Horizon Bikes</h1>
-          <p>Premium electric performance machines built for precision control, instant response, and bold city presence.</p>
-          <div class="center">
-            <a class="btn" href="motorcycles.html">Explore Models</a>
+    <section class="hero-premium parallax-container" style="height: 100vh; padding: 0;">
+      <!-- Parallax Layers -->
+      <div class="parallax-layer parallax-layer-bg" data-speed="0.2"
+        style="background-image: url('https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=1600&q=80');">
+      </div>
+
+      <div class="hero-overlay"></div>
+      <div class="hero-motion-shape"></div>
+
+      <div class="container hero-content">
+        <div class="hero-text-stack">
+          <p class="hero-eyebrow">The Future of Movement</p>
+          <h1 class="hero-title">Experience <br> Performance</h1>
+          <p class="hero-subtitle">Premium electric performance machines built for precision control, instant response,
+            and bold city presence.</p>
+          <div class="hero-actions">
+            <a class="btn-premium" href="motorcycles.html">Explore Models</a>
           </div>
-          <div class="stat-row">
-            <div class="neo-card">
-              <h3>2.7s</h3>
-              <p>0-60 launch</p>
-            </div>
-            <div class="neo-card">
-              <h3>230 mi</h3>
-              <p>Real range</p>
-            </div>
-            <div class="neo-card">
-              <h3>205 hp</h3>
-              <p>Peak output</p>
-            </div>
-          </div>
-        </div>
-        <div class="glass hero-media">
-          <img src="https://images.unsplash.com/photo-1609630875171-b1321377ee65?auto=format&fit=crop&w=1600&q=80" />
         </div>
       </div>
+
     </section>
 
-    <section class="section">
+    <section class="section reveal">
       <div class="container">
         <h2>Performance Lineup</h2>
         <p>Signature builds tuned for street agility, touring endurance, and track focus.</p>
         <div class="grid grid-3">
           <article class="neo-card card">
-            <img src="https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?auto=format&fit=crop&w=1600&q=80" alt="NRX Pulse 900" />
+            <img src="https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?auto=format&fit=crop&w=1600&q=80"
+              alt="NRX Pulse 900" />
             <div class="card-body">
               <h3>NRX Pulse 900</h3>
               <p>Hyper-naked chassis with torque-heavy acceleration.</p>
@@ -127,7 +116,8 @@
             </div>
           </article>
           <article class="neo-card card">
-            <img src="https://images.unsplash.com/photo-1524591652733-73fa1ae7b5ee?auto=format&fit=crop&w=1600&q=80" alt="NRX Aurora GT" />
+            <img src="https://images.unsplash.com/photo-1524591652733-73fa1ae7b5ee?auto=format&fit=crop&w=1600&q=80"
+              alt="NRX Aurora GT" />
             <div class="card-body">
               <h3>NRX Aurora GT</h3>
               <p>Long-range touring with adaptive suspension.</p>
@@ -142,7 +132,8 @@
             </div>
           </article>
           <article class="neo-card card">
-            <img src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=1600&q=80" alt="NRX Ion R" />
+            <img src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=1600&q=80"
+              alt="NRX Ion R" />
             <div class="card-body">
               <h3>NRX Ion R</h3>
               <p>Track-grade acceleration with telemetry control.</p>
@@ -160,77 +151,153 @@
       </div>
     </section>
 
-    <section class="section alt">
-      <div class="container split-grid">
-        <div class="glass image-tile">
-          <img src="https://images.unsplash.com/photo-1449426468159-d96dbf08f19f?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bW90b3JiaWtlfGVufDB8fDB8fHww" />
+    <section class="section alt reveal engineering-section">
+      <div class="container engineering-layout">
+        <div class="eng-visual glass">
+          <img
+            src="https://images.unsplash.com/photo-1449426468159-d96dbf08f19f?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bW90b3JiaWtlfGVufDB8fDB8fHww"
+            alt="Engineering Blueprint" />
+          <div class="eng-scan-line"></div>
+          <div class="eng-overlay-data">
+            <span>SYS: ONLINE</span>
+            <span>BATTERY: 98%</span>
+          </div>
         </div>
-        <div class="glass hero-panel stack">
-          <h2>Signature Engineering</h2>
-          <p>Every Horizon Bikes is tuned for precision feedback and long-range reliability.</p>
-          <ul class="list">
-            <li>Carbon composite chassis</li>
-            <li>Adaptive torque vectoring</li>
-            <li>Intelligent thermal control</li>
-            <li>Over-the-air performance tuning</li>
-          </ul>
-          <div class="center">
+        <div class="eng-content stack">
+          <div>
+            <h2>Signature Engineering</h2>
+            <p style="text-align: left; max-width: 100%;">Every Horizon Bikes is tuned for precision feedback and
+              long-range reliability.</p>
+          </div>
+          <div class="eng-features">
+            <div class="eng-card">
+              <span class="eng-number">01</span>
+              <h4>Carbon Chassis</h4>
+              <p>Ultralight composite frame for agility.</p>
+            </div>
+            <div class="eng-card">
+              <span class="eng-number">02</span>
+              <h4>Torque Vectoring</h4>
+              <p>Adaptive power distribution per wheel.</p>
+            </div>
+            <div class="eng-card">
+              <span class="eng-number">03</span>
+              <h4>Thermal Control</h4>
+              <p>Active cooling for peak track performance.</p>
+            </div>
+            <div class="eng-card">
+              <span class="eng-number">04</span>
+              <h4>OTA Tuning</h4>
+              <p>Performance upgrades over the air.</p>
+            </div>
+          </div>
+          <div class="eng-action">
             <a class="btn btn-outline" href="blog-detail.html">See the Process</a>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section">
-      <div class="container">
-        <h2>Ownership Designed for Riders</h2>
-        <p>Concierge care plans, digital ride logs, and precision service scheduling.</p>
-        <div class="grid grid-3">
-          <div class="neo-card">
-            <h3>Service Intelligence</h3>
-            <p>Predictive maintenance alerts built into your dashboard.</p>
+    <section class="section reveal ownership-section">
+      <div class="container stack">
+        <div class="ownership-header">
+          <h2>Ownership Designed for Riders</h2>
+          <p>Concierge care plans, digital ride logs, and precision service scheduling.</p>
+        </div>
+        <div class="ownership-gallery">
+          <div class="own-card" tabindex="0">
+            <img class="background-image"
+              src="https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&w=800&q=80"
+              alt="Service Intelligence" />
+            <div class="own-card-inner">
+              <span class="own-step">01</span>
+              <h3>Service Intelligence</h3>
+              <p>Predictive maintenance alerts built into your dashboard.</p>
+            </div>
           </div>
-          <div class="neo-card">
-            <h3>Ride Data Vault</h3>
-            <p>Track and share performance insights in real time.</p>
+
+          <div class="own-card" tabindex="0">
+            <img class="background-image"
+              src="https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?auto=format&fit=crop&w=800&q=80"
+              alt="Ride Data Vault" />
+            <div class="own-card-inner">
+              <span class="own-step">02</span>
+              <h3>Ride Data Vault</h3>
+              <p>Track and share performance insights in real time.</p>
+            </div>
           </div>
-          <div class="neo-card">
-            <h3>Concierge Support</h3>
-            <p>Priority access to Horizon Bikes studios and demo fleet.</p>
+
+          <div class="own-card" tabindex="0">
+            <img class="background-image"
+              src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=800&q=80"
+              alt="Concierge Support" />
+            <div class="own-card-inner">
+              <span class="own-step">03</span>
+              <h3>Concierge Support</h3>
+              <p>Priority access to Horizon Bikes studios and demo fleet.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt reveal vanta-showcase-section">
+      <div class="container vanta-layout">
+        <div class="vanta-content stack">
+          <div class="vanta-header">
+            <span class="eyebrow" style="color: var(--accent); margin-bottom: 0.5rem; display: block;">Flagship
+              Performance</span>
+            <h2>Horizon Vanta R</h2>
+            <p>Track-tuned geometry with instant torque delivery and a rider-first cockpit. Experience the silent
+              revolution of speed.</p>
+          </div>
+
+          <div class="vanta-specs">
+            <div class="v-spec">
+              <span class="v-val">2.9s</span>
+              <span class="v-label">0-60 mph</span>
+            </div>
+            <div class="v-spec">
+              <span class="v-val">200mi</span>
+              <span class="v-label">Range</span>
+            </div>
+            <div class="v-spec">
+              <span class="v-val">200hp</span>
+              <span class="v-label">Peak Power</span>
+            </div>
+            <div class="v-spec">
+              <span class="v-val">15m</span>
+              <span class="v-label">Fast Charge</span>
+            </div>
+          </div>
+
+          <div class="vanta-actions">
+            <a class="btn btn-premium" href="motorcycle-detail.html">Explore Vanta R</a>
+            <a class="text-link" href="motorcycles.html"
+              style="margin-left: 1.5rem; color: var(--text); font-weight: 500; text-decoration: none;">View All Models
+              &rarr;</a>
+          </div>
+        </div>
+
+        <div class="vanta-visual glass">
+          <img src="https://images.pexels.com/photos/1715193/pexels-photo-1715193.jpeg?auto=compress&cs=tinysrgb&w=1600"
+            alt="Horizon Vanta R detailed shot" />
+          <div class="vanta-badge">
+            <span>2026 Edition</span>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section alt">
-      <div class="container split-grid">
-        <div class="glass hero-panel stack">
-          <p class="eyebrow">Featured motorcycle</p>
-          <h2>Horizon Vanta R</h2>
-          <p>Track-tuned geometry with instant torque delivery and a rider-first cockpit.</p>
-          <ul class="list">
-            <li>200 hp dual-motor drive</li>
-            <li>Carbon-reinforced frame</li>
-            <li>Adaptive regen braking</li>
-            <li>200 mi real-world range</li>
-          </ul>
-          <div class="center">
-            <a class="btn btn-outline" href="motorcycle-detail.html">Explore Vanta R</a>
-          </div>
-        </div>
-        <div class="glass image-tile">
-          <img src="https://images.pexels.com/photos/1715193/pexels-photo-1715193.jpeg?auto=compress&cs=tinysrgb&w=1600" />
-        </div>
-      </div>
-    </section>
-
-    <section class="section alt">
+    <section class="section alt reveal">
       <div class="container">
         <h2>Dealer Highlights</h2>
         <p>Certified studios with demo inventory and performance-focused teams.</p>
         <div class="grid grid-3">
           <article class="neo-card card">
-            <img src="https://images.pexels.com/photos/31777100/pexels-photo-31777100.jpeg" alt="Horizon Bikes Los Angeles studio" />
+            <img src="https://images.pexels.com/photos/31777100/pexels-photo-31777100.jpeg"
+              alt="Horizon Bikes Los Angeles studio" />
             <div class="card-body">
               <h3>Los Angeles Studio</h3>
               <p>Private delivery suites and weekly performance clinics.</p>
@@ -240,7 +307,8 @@
             </div>
           </article>
           <article class="neo-card card">
-            <img src="https://images.pexels.com/photos/5192966/pexels-photo-5192966.jpeg" alt="Horizon Bikes Austin hub" />
+            <img src="https://images.pexels.com/photos/5192966/pexels-photo-5192966.jpeg"
+              alt="Horizon Bikes Austin hub" />
             <div class="card-body">
               <h3>Austin Precision Hub</h3>
               <p>Track-inspired tuning and curated demo experiences.</p>
@@ -250,7 +318,8 @@
             </div>
           </article>
           <article class="neo-card card">
-            <img src="https://images.pexels.com/photos/30640076/pexels-photo-30640076.jpeg" alt="Horizon Bikes Miami dock" />
+            <img src="https://images.pexels.com/photos/30640076/pexels-photo-30640076.jpeg"
+              alt="Horizon Bikes Miami dock" />
             <div class="card-body">
               <h3>Miami Coastal Dock</h3>
               <p>Touring setups with coastal ride guides and support.</p>
@@ -263,7 +332,7 @@
       </div>
     </section>
 
-    <section class="section">
+    <section class="section reveal">
       <div class="container glass hero-panel">
         <h2>Book a Test Session</h2>
         <p>Experience precision control and instant power delivery in your city.</p>
@@ -278,11 +347,10 @@
     <div class="container footer-grid">
       <div class="stack">
         <a class="brand" href="index.html">
-          <span class="logo-mark" aria-hidden="true"></span>
-          <span class="brand-text">
+          <div class="logo-mark" aria-hidden="true"></div>
+          <div class="brand-text">
             <span class="brand-name">Horizon Bikes</span>
-            <span class="brand-tag">Ride the Future.</span>
-          </span>
+          </div>
         </a>
         <p>Premium performance motorcycles engineered for the next generation.</p>
         <div class="center">
@@ -290,21 +358,26 @@
         </div>
         <div class="footer-social">
           <a href="#" aria-label="Horizon Bikes Instagram">
-            <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
-              <rect x="4" y="4" width="16" height="16" rx="4"></rect>
-              <circle cx="12" cy="12" r="4"></circle>
-              <circle cx="17" cy="7" r="1"></circle>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
             </svg>
           </a>
           <a href="#" aria-label="Horizon Bikes Facebook">
-            <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
-              <path d="M14 8h3V5h-3c-2.2 0-4 1.8-4 4v2H7v3h3v5h3v-5h3l1-3h-4V9c0-.6.4-1 1-1Z"></path>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
             </svg>
           </a>
           <a href="#" aria-label="Horizon Bikes YouTube">
-            <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
-              <path d="M4 7.5c0-1 0-2.5 2-2.5h12c2 0 2 1.5 2 2.5v9c0 1-0.5 2.5-2 2.5H6c-1.5 0-2-1.5-2-2.5v-9Z"></path>
-              <path d="m10 9 5 3-5 3z" fill="currentColor" stroke="none"></path>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path
+                d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.42a2.78 2.78 0 0 0-1.94 2C1 8.11 1 12 1 12s0 3.89.46 5.58a2.78 2.78 0 0 0 1.94 2c1.71.42 8.6.42 8.6.42s6.88 0 8.6-.42a2.78 2.78 0 0 0 1.94-2C23 15.89 23 12 23 12s0-3.89-.46-5.58z">
+              </path>
+              <polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"></polygon>
             </svg>
           </a>
         </div>
@@ -335,4 +408,5 @@
 
   <script src="main.js"></script>
 </body>
+
 </html>

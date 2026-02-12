@@ -1,91 +1,135 @@
 ﻿<!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Horizon Bikes | Dashboard</title>
+  <link rel="icon" type="image/png" href="image/favicon.png" />
   <link rel="stylesheet" href="style.css" />
 </head>
-<body class="page dashboard-page">
-  <header class="site-header">
-    <div class="nav-bar">
-      <div class="nav-inner container">
-        <a class="brand" href="index.html">
-          <span class="logo-mark" aria-hidden="true"></span>
-          <span class="brand-text">
-            <span class="brand-name">Horizon Bikes</span>
-            <span class="brand-tag">Ride the Future.</span>
-          </span>
-        </a>
-        <nav class="nav-links" aria-label="Primary">
-          <a class="nav-link" href="index.html">Home</a>
-          <a class="nav-link" href="home-2.html">Home 2</a>
-          <a class="nav-link" href="motorcycles.html">Motorcycles</a>
-          <a class="nav-link" href="dealers.html">Dealers</a>
-          <a class="nav-link" href="blog.html">Blog</a>
-          <a class="nav-link" href="portal-bikes.html">My Bikes</a>
-          <a class="nav-link" href="portal-service.html">Service</a>
-          <a class="nav-link" href="contact.html">Contact</a>
-          <a class="nav-link" href="dashboard.html">Dashboard</a>
-        </nav>
-        <div class="nav-actions">
-          <button class="icon-btn theme-toggle" id="theme-toggle" type="button" aria-pressed="false" aria-label="Toggle theme">
-            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-              <circle cx="12" cy="12" r="5"></circle>
-              <path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.5 4.5l2.2 2.2M17.3 17.3l2.2 2.2M4.5 19.5l2.2-2.2M17.3 6.7l2.2-2.2"></path>
-            </svg>
-          </button>
-          <button class="nav-dashboard-icon" type="button" aria-label="Open navigation menu" aria-controls="mobile-menu" aria-expanded="false">
-            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-              <rect x="4" y="4" width="7" height="7" rx="1"></rect>
-              <rect x="13" y="4" width="7" height="7" rx="1"></rect>
-              <rect x="4" y="13" width="7" height="7" rx="1"></rect>
-              <rect x="13" y="13" width="7" height="7" rx="1"></rect>
-            </svg>
-          </button>
-          <a class="btn btn-outline btn-small" href="login.html">Login</a>
-          <a class="btn btn-small" href="register.html">Register</a>
 
-          <button class="icon-btn menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
-            <span></span><span></span><span></span>
-          </button>
-        </div>
+<body class="page dashboard-page">
+  <header class="dashboard-mobile-header">
+    <a class="brand" href="index.html">
+      <div class="logo-mark" aria-hidden="true"></div>
+      <div class="brand-text">
+        <span class="brand-name">Horizon Bikes</span>
       </div>
-    </div>
-    <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
-      <div class="menu-panel glass">
-        <button class="menu-close icon-btn" type="button" data-close aria-label="Close menu">X</button>
-        <div class="menu-links">
-          <a class="nav-link" data-close href="index.html">Home</a>
-          <a class="nav-link" data-close href="home-2.html">Home 2</a>
-          <a class="nav-link" data-close href="motorcycles.html">Motorcycles</a>
-          <a class="nav-link" data-close href="dealers.html">Dealers</a>
-          <a class="nav-link" data-close href="blog.html">Blog</a>
-          <a class="nav-link" data-close href="portal-bikes.html">My Bikes</a>
-          <a class="nav-link" data-close href="portal-service.html">Service</a>
-          <a class="nav-link" data-close href="contact.html">Contact</a>
-          <a class="nav-link" data-close href="dashboard.html">Dashboard</a>
-        </div>
-        <div class="menu-actions center">
-          <a class="btn btn-outline" data-close href="login.html">Login</a>
-          <a class="btn" data-close href="register.html">Register</a>
-        </div>
-      </div>
-    </div>
+    </a>
+    <button class="icon-btn theme-toggle" id="theme-toggle" type="button" aria-pressed="false" aria-label="Toggle theme"
+      style="margin-left: auto; margin-right: 1rem;">
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <circle cx="12" cy="12" r="5"></circle>
+        <path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.5 4.5l2.2 2.2M17.3 17.3l2.2 2.2M4.5 19.5l2.2-2.2M17.3 6.7l2.2-2.2">
+        </path>
+      </svg>
+    </button>
+    <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu"
+      aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
   </header>
 
-  <main>
-    <section class="hero hero-dashboard">
-      <div class="container glass">
+  <!-- Mobile Menu for Dashboard -->
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <div class="menu-panel glass">
+      <button class="icon-btn menu-close" type="button" data-close aria-label="Close menu">X</button>
+      <div class="menu-links">
+        <a class="nav-link" data-close href="dashboard.html">Overview</a>
+        <a class="nav-link" data-close href="portal-bikes.html">My Bikes</a>
+        <a class="nav-link" data-close href="portal-service.html">Service</a>
+        <a class="nav-link" data-close href="dealers.html">Dealers</a>
+        <a class="nav-link" data-close href="contact.html">Contact</a>
+        <button class="nav-link theme-toggle" id="mobile-theme-toggle"
+          style="background:transparent; border:none; width: 100%; text-align: center; color: var(--accent); padding: 1rem;">Toggle
+          Theme</button>
+        <a class="nav-link" data-close href="login.html" style="color: #ef4444;">Logout</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="dashboard-layout">
+    <aside class="dashboard-sidebar">
+      <div class="sidebar-header">
+        <a class="brand" href="index.html">
+          <div class="logo-mark" aria-hidden="true"></div>
+          <div class="brand-text">
+            <span class="brand-name">Horizon Bikes</span>
+          </div>
+        </a>
+      </div>
+      <nav class="sidebar-nav">
+        <a href="dashboard.html" class="sidebar-link active">
+          <svg viewBox="0 0 24 24">
+            <rect x="3" y="3" width="7" height="7" rx="1"></rect>
+            <rect x="14" y="3" width="7" height="7" rx="1"></rect>
+            <rect x="14" y="14" width="7" height="7" rx="1"></rect>
+            <rect x="3" y="14" width="7" height="7" rx="1"></rect>
+          </svg>
+          <span>Overview</span>
+        </a>
+        <a href="portal-bikes.html" class="sidebar-link">
+          <svg viewBox="0 0 24 24">
+            <path d="M5 15l3-3 3 3M13 15l3-3 3 3"></path>
+            <circle cx="12" cy="12" r="9"></circle>
+          </svg>
+          <span>My Bikes</span>
+        </a>
+        <a href="portal-service.html" class="sidebar-link">
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.77 3.77z">
+            </path>
+          </svg>
+          <span>Service</span>
+        </a>
+        <a href="dealers.html" class="sidebar-link">
+          <svg viewBox="0 0 24 24">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+            <circle cx="12" cy="10" r="3"></circle>
+          </svg>
+          <span>Dealers</span>
+        </a>
+        <a href="contact.html" class="sidebar-link">
+          <svg viewBox="0 0 24 24">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+          </svg>
+          <span>Contact</span>
+        </a>
+      </nav>
+      <div class="sidebar-footer">
+        <button class="icon-btn theme-toggle" id="theme-toggle" style="margin-bottom: 1rem;">
+          <svg viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="5"></circle>
+            <path d="M12 2v3M12 19v3M2 12h3M19 12h3"></path>
+          </svg>
+        </button>
+        <a href="login.html" class="sidebar-link">
+          <svg viewBox="0 0 24 24">
+            <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4M16 17l5-5-5-5M21 12H9"></path>
+          </svg>
+          <span>Logout</span>
+        </a>
+      </div>
+    </aside>
+
+    <main class="dashboard-main">
+      <header class="dashboard-header">
         <p class="eyebrow">Performance Dashboard</p>
-        <h1>Horizon Bikes Control Center</h1>
+        <h1>Control Center</h1>
         <p>Monitor ride data, updates, and performance health across your fleet.</p>
+      </header>
+
+      <section class="section">
         <div class="stat-row">
           <div class="stat neo-card">
             <div class="ai-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" role="img">
+              <svg viewBox="0 0 24 24">
                 <circle cx="12" cy="12" r="3.5"></circle>
-                <path d="M12 4v2M12 18v2M4 12h2M18 12h2M6.5 6.5l1.4 1.4M16.1 16.1l1.4 1.4M6.5 17.5l1.4-1.4M16.1 7.9l1.4-1.4"></path>
+                <path
+                  d="M12 4v2M12 18v2M4 12h2M18 12h2M6.5 6.5l1.4 1.4M16.1 16.1l1.4 1.4M6.5 17.5l1.4-1.4M16.1 7.9l1.4-1.4">
+                </path>
               </svg>
             </div>
             <h3>98%</h3>
@@ -93,7 +137,7 @@
           </div>
           <div class="stat neo-card">
             <div class="ai-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" role="img">
+              <svg viewBox="0 0 24 24">
                 <path d="M7 3h10v4H7zM5 7h14v10H5zM9 21h6"></path>
                 <circle cx="9" cy="12" r="1"></circle>
                 <circle cx="12" cy="14" r="1"></circle>
@@ -105,7 +149,7 @@
           </div>
           <div class="stat neo-card">
             <div class="ai-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" role="img">
+              <svg viewBox="0 0 24 24">
                 <path d="M4 16c2-4 6-6 10-6s6 2 6 6"></path>
                 <path d="M8 16a4 4 0 0 1 8 0"></path>
                 <circle cx="12" cy="16" r="1.5"></circle>
@@ -115,181 +159,95 @@
             <p>Ride Sessions</p>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="section">
-        <div class="container dashboard-grid">
+      <section class="section">
+        <div class="dashboard-grid">
           <div class="neo-card">
-          <h2>Live Performance</h2>
-          <p>Torque response and stability mapping are tracking within optimal ranges.</p>
-          <div class="meter">
-            <span style="width: 82%"></span>
+            <h2>Live Performance</h2>
+            <p>Torque response and stability mapping are tracking within optimal ranges.</p>
+            <div class="meter">
+              <span style="width: 82%"></span>
+            </div>
+          </div>
+          <div class="neo-card">
+            <h2>Charging Status</h2>
+            <p>Current charge window optimized for peak performance delivery.</p>
+            <div class="meter">
+              <span style="width: 64%"></span>
+            </div>
+          </div>
+          <div class="neo-card">
+            <h2>Rider Readiness</h2>
+            <p>Pre-ride checks completed with full safety clearance.</p>
+            <div class="meter">
+              <span style="width: 90%"></span>
+            </div>
           </div>
         </div>
-        <div class="neo-card">
-          <h2>Charging Status</h2>
-          <p>Current charge window optimized for peak performance delivery.</p>
-          <div class="meter">
-            <span style="width: 64%"></span>
-          </div>
-        </div>
-        <div class="neo-card">
-          <h2>Rider Readiness</h2>
-          <p>Pre-ride checks completed with full safety clearance.</p>
-          <div class="meter">
-            <span style="width: 90%"></span>
-          </div>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="section alt">
-        <div class="container split-grid">
-        <div class="glass panel upcoming-actions">
-          <h2>Upcoming Actions</h2>
-          <ul class="list">
-            <li>Install firmware v3.3 on NRX Pulse</li>
-            <li>Schedule diagnostic scan for NRX Aurora</li>
-            <li>Review new torque map profiles</li>
-          </ul>
-          <div class="center">
+      <section class="section alt">
+        <div class="split-grid">
+          <div class="glass panel upcoming-actions" style="padding: 2rem;">
+            <h2>Upcoming Actions</h2>
+            <ul class="list" style="text-align: left; margin: 1rem 0;">
+              <li>Install firmware v3.3 on NRX Pulse</li>
+              <li>Schedule diagnostic scan for NRX Aurora</li>
+              <li>Review new torque map profiles</li>
+            </ul>
             <button class="btn" type="button">Open Task Center</button>
           </div>
-        </div>
-        <div class="grid grid-cards">
-          <div class="neo-card">
-            <div class="ai-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" role="img">
-                <path d="M5 15c3-6 11-6 14 0"></path>
-                <circle cx="12" cy="12" r="3"></circle>
-              </svg>
+          <div class="grid grid-3">
+            <div class="neo-card">
+              <h3>Ride Stats</h3>
+              <p>Average duration: 42m</p>
             </div>
-            <h3>Ride Stats</h3>
-            <p>Average ride duration: 42 minutes</p>
-          </div>
-          <div class="neo-card">
-            <div class="ai-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" role="img">
-                <path d="M6 4v16M12 7v13M18 10v10"></path>
-                <circle cx="6" cy="4" r="1.5"></circle>
-                <circle cx="12" cy="7" r="1.5"></circle>
-                <circle cx="18" cy="10" r="1.5"></circle>
-              </svg>
+            <div class="neo-card">
+              <h3>Energy</h3>
+              <p>Last 7 days: 184 kWh</p>
             </div>
-            <h3>Energy Usage</h3>
-            <p>Last 7 days: 184 kWh</p>
-          </div>
-          <div class="neo-card">
-            <div class="ai-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" role="img">
-                <path d="M12 4 4 7v5c0 4.4 3 7.8 8 9 5-1.2 8-4.6 8-9V7z"></path>
-                <path d="m9 12 2 2 4-4"></path>
-              </svg>
+            <div class="neo-card">
+              <h3>Health</h3>
+              <p>No issues detected</p>
             </div>
-            <h3>Service Health</h3>
-            <p>No critical issues detected</p>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="section">
-      <div class="container">
+      <section class="section">
         <h2>Fleet Highlights</h2>
-        <p>Quick visuals from your active bikes and recent tuning sessions.</p>
         <div class="grid grid-3">
           <article class="neo-card card">
-            <img src="image/WhatsApp Image 2026-01-25 at 2.04.53 PM (1).jpeg" alt="NRX Pulse telemetry snapshot" />
+            <img src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=800&q=80"
+              alt="NRX Pulse" />
             <div class="card-body">
               <h3>NRX Pulse</h3>
               <p>Torque map v3.3 deployed with improved launch response.</p>
             </div>
           </article>
           <article class="neo-card card">
-            <img src="image/WhatsApp Image 2026-01-25 at 1.57.25 PM.jpeg" alt="NRX Aurora charging snapshot" />
+            <img src="https://images.unsplash.com/photo-1524591652733-73fa1ae7b5ee?auto=format&fit=crop&w=800&q=80"
+              alt="NRX Aurora" />
             <div class="card-body">
               <h3>NRX Aurora</h3>
               <p>Charging curve optimized for long-range touring sessions.</p>
             </div>
           </article>
           <article class="neo-card card">
-            <img src="https://sm.askmen.com/askmen_in/photo/default/srk-bike_ky91.jpg" alt="NRX Ion track snapshot" />
+            <img src="https://images.unsplash.com/photo-1609630875171-b1321377ee65?auto=format&fit=crop&w=800&q=80"
+              alt="NRX Ion" />
             <div class="card-body">
               <h3>NRX Ion R</h3>
               <p>Telemetry review completed with 4% lap time gain.</p>
             </div>
           </article>
         </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-grid">
-      <div class="stack">
-        <a class="brand" href="dashboard.html">
-          <span class="logo-mark" aria-hidden="true"></span>
-          <span class="brand-text">
-            <span class="brand-name">Horizon Bikes</span>
-            <span class="brand-tag">Ride the Future.</span>
-          </span>
-        </a>
-        <p>Premium performance motorcycles engineered for the next generation.</p>
-        <div class="center">
-          <a class="btn btn-outline btn-small" href="motorcycles.html">Browse Bikes</a>
-        </div>
-        <div class="footer-social">
-          <a href="#" aria-label="Horizon Bikes Instagram">
-            <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
-              <rect x="4" y="4" width="16" height="16" rx="4"></rect>
-              <circle cx="12" cy="12" r="4"></circle>
-              <circle cx="17" cy="7" r="1"></circle>
-            </svg>
-          </a>
-          <a href="#" aria-label="Horizon Bikes Facebook">
-            <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
-              <path d="M14 8h3V5h-3c-2.2 0-4 1.8-4 4v2H7v3h3v5h3v-5h3l1-3h-4V9c0-.6.4-1 1-1Z"></path>
-            </svg>
-          </a>
-          <a href="#" aria-label="Horizon Bikes YouTube">
-            <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
-              <path d="M4 7.5c0-1 0-2.5 2-2.5h12c2 0 2 1.5 2 2.5v9c0 1-0.5 2.5-2 2.5H6c-1.5 0-2-1.5-2-2.5v-9Z"></path>
-              <path d="m10 9 5 3-5 3z" fill="currentColor" stroke="none"></path>
-            </svg>
-          </a>
-        </div>
-      </div>
-      <div class="stack">
-        <h3>Explore</h3>
-        <ul class="list">
-          <li><a href="dealers.html">Dealer Network</a></li>
-          <li><a href="blog.html">Rider Journal</a></li>
-          <li><a href="portal-bikes.html">My Garage</a></li>
-        </ul>
-      </div>
-      <div class="stack">
-        <h3>Support</h3>
-        <p>support@horizonbikes.com</p>
-        <p>+1 (555) 349-2400</p>
-        <p>Mon-Sat 9am-7pm</p>
-      </div>
-      <div class="stack">
-        <h3>Visit</h3>
-        <p>Horizon Bikes Studio, Sunset Blvd</p>
-        <p>Los Angeles, CA</p>
-        <p>Private demo sessions daily</p>
-      </div>
-    </div>
-    <p class="footer-note">(c) 2026 Horizon Bikes. All rights reserved.</p>
-  </footer>
+      </section>
+    </main>
+  </div>
 
   <script src="main.js"></script>
 </body>
+
 </html>
-
-
-
-
-
-
