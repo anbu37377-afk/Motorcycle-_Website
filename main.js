@@ -1,26 +1,53 @@
 ﻿document.addEventListener("DOMContentLoaded", () => {
   const body = document.body;
-  const themeToggle = document.getElementById("theme-toggle");
   const savedTheme = localStorage.getItem("theme") || "dark";
 
   body.setAttribute("data-theme", savedTheme);
 
-  const setupThemeToggle = (activeToggle) => {
-    if (!activeToggle) return;
-    activeToggle.setAttribute("aria-pressed", localStorage.getItem("theme") === "light");
-    activeToggle.addEventListener("click", () => {
-      const current = body.getAttribute("data-theme");
-      const nextTheme = current === "light" ? "dark" : "light";
-      body.setAttribute("data-theme", nextTheme);
-      localStorage.setItem("theme", nextTheme);
-      document.querySelectorAll(".theme-toggle").forEach(btn => {
-        btn.setAttribute("aria-pressed", nextTheme === "light");
+  // WebView Detection
+  const isWebView = () => {
+    const ua = window.navigator.userAgent;
+    const isiOS = /iPad|iPhone|iPod/.test(ua) && !window.MSStream;
+    const isAndroid = /Android/.test(ua);
+    const isWV = ua.includes('wv') || ua.includes('Version/');
+    const isStandalone = window.navigator.standalone || window.matchMedia('(display-mode: standalone)').matches;
+
+    return (isiOS && !/Safari/.test(ua)) || (isAndroid && isWV) || isStandalone;
+  };
+
+  if (isWebView()) {
+    body.classList.add("is-webview");
+  }
+
+  const setupThemeToggles = () => {
+    const toggles = document.querySelectorAll(".theme-toggle, #mobile-theme-toggle");
+    const currentTheme = body.getAttribute("data-theme");
+
+    toggles.forEach(toggle => {
+      toggle.setAttribute("aria-pressed", currentTheme === "light");
+
+      // Remove existing listener to avoid duplicates if this is called multiple times
+      toggle.replaceWith(toggle.cloneNode(true));
+    });
+
+    // Re-select after cloning
+    const newToggles = document.querySelectorAll(".theme-toggle, #mobile-theme-toggle");
+    newToggles.forEach(toggle => {
+      toggle.addEventListener("click", () => {
+        const current = body.getAttribute("data-theme");
+        const nextTheme = current === "light" ? "dark" : "light";
+        body.setAttribute("data-theme", nextTheme);
+        localStorage.setItem("theme", nextTheme);
+
+        // Update all buttons
+        document.querySelectorAll(".theme-toggle, #mobile-theme-toggle").forEach(btn => {
+          btn.setAttribute("aria-pressed", nextTheme === "light");
+        });
       });
     });
   };
 
-  setupThemeToggle(themeToggle);
-  setupThemeToggle(document.getElementById("mobile-theme-toggle"));
+  setupThemeToggles();
 
 
   const menuToggle = document.getElementById("menu-toggle");

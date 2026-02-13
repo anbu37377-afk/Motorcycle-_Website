@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Horizon Bikes | Service</title>
-  <link rel="icon" type="image/png" href="image/favicon.png" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -51,66 +51,68 @@
 
   <div class="dashboard-layout">
     <aside class="dashboard-sidebar">
-      <div class="sidebar-header">
-        <a class="brand" href="index.html">
-          <div class="logo-mark" aria-hidden="true"></div>
-          <div class="brand-text">
-            <span class="brand-name">Horizon Bikes</span>
-          </div>
-        </a>
-      </div>
-      <nav class="sidebar-nav">
-        <a href="dashboard.html" class="sidebar-link">
-          <svg viewBox="0 0 24 24">
-            <rect x="3" y="3" width="7" height="7" rx="1"></rect>
-            <rect x="14" y="3" width="7" height="7" rx="1"></rect>
-            <rect x="14" y="14" width="7" height="7" rx="1"></rect>
-            <rect x="3" y="14" width="7" height="7" rx="1"></rect>
-          </svg>
-          <span>Overview</span>
-        </a>
-        <a href="portal-bikes.html" class="sidebar-link">
-          <svg viewBox="0 0 24 24">
-            <path d="M5 15l3-3 3 3M13 15l3-3 3 3"></path>
-            <circle cx="12" cy="12" r="9"></circle>
-          </svg>
-          <span>My Bikes</span>
-        </a>
-        <a href="portal-service.html" class="sidebar-link active">
-          <svg viewBox="0 0 24 24">
-            <path
-              d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.77 3.77z">
-            </path>
-          </svg>
-          <span>Service</span>
-        </a>
-        <a href="dealers.html" class="sidebar-link">
-          <svg viewBox="0 0 24 24">
-            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-            <circle cx="12" cy="10" r="3"></circle>
-          </svg>
-          <span>Dealers</span>
-        </a>
-        <a href="contact.html" class="sidebar-link">
-          <svg viewBox="0 0 24 24">
-            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
-          </svg>
-          <span>Contact</span>
-        </a>
-      </nav>
-      <div class="sidebar-footer">
-        <button class="icon-btn theme-toggle" id="theme-toggle" style="margin-bottom: 1rem;">
-          <svg viewBox="0 0 24 24">
-            <circle cx="12" cy="12" r="5"></circle>
-            <path d="M12 2v3M12 19v3M2 12h3M19 12h3"></path>
-          </svg>
-        </button>
-        <a href="login.html" class="sidebar-link">
-          <svg viewBox="0 0 24 24">
-            <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4M16 17l5-5-5-5M21 12H9"></path>
-          </svg>
-          <span>Logout</span>
-        </a>
+      <div class="sidebar-sticky-content">
+        <div class="sidebar-header">
+          <a class="brand" href="index.html">
+            <div class="logo-mark" aria-hidden="true"></div>
+            <div class="brand-text">
+              <span class="brand-name">Horizon Bikes</span>
+            </div>
+          </a>
+        </div>
+        <nav class="sidebar-nav">
+          <a href="dashboard.html" class="sidebar-link">
+            <svg viewBox="0 0 24 24">
+              <rect x="3" y="3" width="7" height="7" rx="1"></rect>
+              <rect x="14" y="3" width="7" height="7" rx="1"></rect>
+              <rect x="14" y="14" width="7" height="7" rx="1"></rect>
+              <rect x="3" y="14" width="7" height="7" rx="1"></rect>
+            </svg>
+            <span>Overview</span>
+          </a>
+          <a href="portal-bikes.html" class="sidebar-link">
+            <svg viewBox="0 0 24 24">
+              <path d="M5 15l3-3 3 3M13 15l3-3 3 3"></path>
+              <circle cx="12" cy="12" r="9"></circle>
+            </svg>
+            <span>My Bikes</span>
+          </a>
+          <a href="portal-service.html" class="sidebar-link active">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.77 3.77z">
+              </path>
+            </svg>
+            <span>Service</span>
+          </a>
+          <a href="dealers.html" class="sidebar-link">
+            <svg viewBox="0 0 24 24">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            <span>Dealers</span>
+          </a>
+          <a href="contact.html" class="sidebar-link">
+            <svg viewBox="0 0 24 24">
+              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+            </svg>
+            <span>Contact</span>
+          </a>
+        </nav>
+        <div class="sidebar-footer">
+          <button class="icon-btn theme-toggle" id="theme-toggle" style="margin-bottom: 1rem;">
+            <svg viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="5"></circle>
+              <path d="M12 2v3M12 19v3M2 12h3M19 12h3"></path>
+            </svg>
+          </button>
+          <a href="login.html" class="sidebar-link">
+            <svg viewBox="0 0 24 24">
+              <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4M16 17l5-5-5-5M21 12H9"></path>
+            </svg>
+            <span>Logout</span>
+          </a>
+        </div>
       </div>
     </aside>
 
@@ -140,7 +142,7 @@
 
       <section class="section alt reveal">
         <div class="split-grid">
-          <div class="glass panel" style="padding: 2rem;">
+          <div class="glass panel">
             <h2>Next Appointment</h2>
             <p>May 4th at Horizon Bikes LA Studio. Battery and thermal profiling.</p>
             <div class="center">
